@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Correct way to change the content of the div (innerHTML is better)
+    document.getElementById("myDiv").innerHTML = "<b>New text</b>"; 
+    // Or you can use textContent if only plain text is expected
+    //document.getElementById("myDiv").textContent = "New text";
+  </script>
+</body>
+</html>
